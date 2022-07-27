@@ -1,0 +1,8 @@
+{
+  "translation": {
+    "welcome": "Bem vindo a uma simples página usando nextjs",
+    "message": "A tradução que está usando é : ",
+    "alt": "Bandeira do brasil",
+    "button": "Voltar"
+  }
+}

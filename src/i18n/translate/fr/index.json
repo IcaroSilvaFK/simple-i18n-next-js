@@ -1,0 +1,8 @@
+{
+  "translation": {
+    "welcome": "Bienvenue sur une page simple en utilisant nextjs",
+    "message": "La traduction que vous utilisez est : ",
+    "alt": "Drapeau de la France",
+    "button": "Retour"
+  }
+}
