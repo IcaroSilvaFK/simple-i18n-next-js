@@ -1,4 +1,5 @@
 import { useRouter } from 'next/router';
+import { useTranslation } from 'react-i18next';
 
 import i18next from '../../i18n';
 
@@ -21,16 +22,18 @@ function imageLocale(locale: string) {
 export default function Blog() {
   const router = useRouter();
   const { locale } = router;
-  i18next.changeLanguage(locale);
+  const { changeLanguage, t } = i18next;
+
+  changeLanguage(locale);
 
   return (
     <div className={styles.container}>
-      <h1>{i18next.t('welcome')}</h1>
-      <h3>{i18next.t('message')}</h3>
+      <h1>{t('welcome')}</h1>
+      <h3>{t('message')}</h3>
 
-      <img src={imageLocale(locale!)} alt={i18next.t('alt')} />
+      <img src={imageLocale(locale!)} alt={t('alt')} />
 
-      <button onClick={() => router.back()}>{i18next.t('button')}</button>
+      <button onClick={() => router.back()}>{t('button')}</button>
     </div>
   );
 }
